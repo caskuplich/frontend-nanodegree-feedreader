@@ -89,9 +89,8 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('should have at least one entry', function(done) {
+        it('should have at least one entry', function() {
             expect($('.feed .entry').length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -114,9 +113,8 @@ $(function() {
             });
         });
 
-        it('should change the content of the page', function(done) {
+        it('should change the content of the page', function() {
             expect(secondFeed).not.toEqual(firstFeed);
-            done();
         });
     });
 }());
